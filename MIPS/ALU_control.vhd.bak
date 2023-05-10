@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity ALU_Control is
+    port (
+        OPselect : out std_logic_vector(4 downto 0);
+        instr : in std_logic_vector(5 downto 0);
+        ALU_lo_HI : out std_logic_vector(1 downto 0);
+        ALU_OP : in std_logic_vector(4 downto 0);
+        hi_en, low_en : out std_logic;);
+
+end ALU_Control;
+
+architecture BHV of ALU_control is
+    
+begin
+    
+    
+    
+end architecture BHV;

@@ -1,0 +1,246 @@
+C:/Users/baile/Documents/EEL4712/Project/GCD_Assembly.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/GCD_Assembly.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package altera_mf_components
+-- Compiling entity GCD_Assembly
+-- Compiling architecture SYN of gcd_assembly
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/TestCase1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/TestCase1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package altera_mf_components
+-- Compiling entity TestCase1
+-- Compiling architecture SYN of testcase1
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/mux_3x1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/mux_3x1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_3x1
+-- Compiling architecture WITH_SELECT of mux_3x1
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/register.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/register.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity reg
+-- Compiling architecture EN_REG of reg
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/TestCase2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/TestCase2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package altera_mf_components
+-- Compiling entity TestCase2
+-- Compiling architecture SYN of testcase2
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/mux_4x1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/mux_4x1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_4x1
+-- Compiling architecture WITH_SELECT of mux_4x1
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/top_level_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/top_level_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity top_level_tb
+-- Compiling architecture TB of top_level_tb
+-- Loading entity top_level
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/TestCase4.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/TestCase4.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package altera_mf_components
+-- Compiling entity TestCase4
+-- Compiling architecture SYN of testcase4
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/ram.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/ram.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram
+-- Compiling architecture ASYNC_READ of ram
+-- Compiling architecture SYNC_READ_DURING_WRITE of ram
+-- Loading entity ram
+-- Compiling architecture SYNC_READ of ram
+-- Loading entity ram
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/top_level.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity top_level
+-- Compiling architecture STR of top_level
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/ALU_control.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/ALU_control.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU_Control
+-- Compiling architecture BHV of ALU_control
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/shift_left2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/shift_left2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity shift_left2
+-- Compiling architecture bhv of shift_left2
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/TestCase7.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/TestCase7.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package altera_mf_components
+-- Compiling entity TestCase7
+-- Compiling architecture SYN of testcase7
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/controller.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/controller.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity controller
+-- Compiling architecture fsm of controller
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/mem_logic.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/mem_logic.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mem_logic
+-- Compiling architecture BHV of mem_logic
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/alu_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/alu_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity alu_tb
+-- Compiling architecture TB of alu_tb
+-- Loading entity alu
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/delay.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/delay.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity delay
+-- Compiling architecture STR of delay
+-- Loading package NUMERIC_STD
+-- Loading entity reg
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/datapath.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/datapath.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity datapath
+-- Compiling architecture str of datapath
+-- Loading entity alu
+-- Loading entity reg
+-- Loading entity mux_2x1
+-- Loading entity memory
+-- Loading entity register_file
+-- Loading entity mux_4x1
+-- Loading entity mux_3x1
+-- Loading entity ALU_Control
+-- Loading entity sign_ext
+-- Loading entity shift_left2
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/memory.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/memory.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity memory
+-- Compiling architecture STR of memory
+-- Loading entity reg
+-- Loading package altera_mf_components
+-- Loading entity TestCase7
+-- Loading entity mem_logic
+-- Loading entity delay
+-- Loading entity mux_3x1
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/sign_ext.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/sign_ext.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity sign_ext
+-- Compiling architecture BHV of sign_ext
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/ram1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/ram1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package altera_mf_components
+-- Compiling entity ram1
+-- Compiling architecture SYN of ram1
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/week2_demo.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/week2_demo.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package altera_mf_components
+-- Compiling entity week2_demo
+-- Compiling architecture SYN of week2_demo
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/alu.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/alu.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity alu
+-- Compiling architecture BHV of alu
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/mux_2x1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/mux_2x1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_2x1
+-- Compiling architecture WITH_SELECT of mux_2x1
+
+} {} {}} C:/Users/baile/Documents/EEL4712/Project/register_file.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/baile/Documents/EEL4712/Project/register_file.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity register_file
+-- Compiling architecture async_read of register_file
+
+} {} {}}

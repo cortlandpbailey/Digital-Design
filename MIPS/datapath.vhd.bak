@@ -1,0 +1,199 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity datapath is
+    port (
+        --I/O:
+        inPort0, inPort1 : in std_logic_vector(31 downto 0);
+        outPort0 : out std_logic_vector(31 downto 0);
+        inPort0_en, inPort1_en : in std_logic;
+        clk, rst : in std_logic;
+        -- Controller Signals:
+        irwrite, IorD : in std_logic;
+        memwrite, memread : in std_logic;
+        MemtoReg, regwrite : in std_logic;
+        IsSigned, JumpandLink, ALUsrcA, ALUsrcB : in std_logic;
+        ALU_OP, PCSource, RegDST, PCWrite, PCwritecond : in std_logic
+       
+    );
+
+end datapath;
+
+architecture str of datapath is
+    signal alu_result, alu_result_hi : std_logic_vector(31 downto 0);
+    signal PC_out, PC_Mux_Out, ctrl_Mux_out : std_logic_vector(31 downto 0);
+    signal Mem_out, Instr_Reg_out, Mem_data_reg_out : std_logic_vector(31 downto 0);
+    signal IR_Mux_out, OPselect : std_logic_vector(4 downto 0);
+    signal read_data1, read_data2 : std_logic_vector(31 downto 0);
+    signal alu_out, lo, hi, ALU_mux_out : std_logic_vector(31 downto 0);
+    signal branch_taken : std_logic;
+    signal Reg_A_Mux_out, Reg_B_Mux_out, alu_out_mux_out: std_logic_vector(31 downto 0);
+    
+begin
+    variable PC_write : std_logic := (PCWrite OR (PCwritecond AND branch_taken));
+    ALU : entity work.alu
+        port map (
+            input1 => Reg_A_Mux_out,
+            input2 => Reg_B_Mux_out,
+            shift_in => unsigned(Instr_Reg_out(10 downto 6)),
+            sel => OPselect,
+            result => alu_result,
+            result_hi => alu_result_hi,
+            branch_taken => branch_taken);
+
+    PC : entity work.reg
+        port map (
+            input => ctrl_Mux_out,
+            clk => clk,
+            rst => rst,
+            en => PC_write,            
+            output => PC_out);
+
+    PC_Mux : entity work.mux_2x1
+        generic map (width => 32)
+        port map (
+            in1 => PC_out,
+            in2 => alu_out,
+            output => PC_Mux_Out,
+            sel => IorD);
+
+    Instruction_Register : entity work.reg
+        generic map (width => 32)
+        port map ( 
+            input => Mem_out,
+            output => Instr_Reg_out,
+            clk => clk,
+            rst => rst,
+            en => irwrite);
+
+    Memory_Data_Register : entity work.reg
+        generic map (width => 32)
+        port map (
+            input => Mem_out,
+            output => Mem_data_reg_out,
+            clk => clk,
+            rst => rst,
+            en => '1');
+
+    IR_Mux : entity work.mux_2x1
+        generic map (width => 5)
+        port map (
+            in1 => Instr_Reg_out(20 downto 16),
+            in2 => Instr_Reg_out(15 downto 11),
+            output => IR_Mux_out,
+            sel => RegDST);
+    
+    Mem_data_mux : entity work.mux_2x1
+        generic map (width => 32)
+        port map (
+            in1 => alu_out_mux_out,
+            in2 => Mem_data_reg_out,
+            output => mem_data_mux_out,
+            sel => MemtoReg);
+
+    Register_File : entity work.register_file
+        port map (
+            clk => clk,
+            rst => rst,
+            rd_addr0 => Instr_Reg_out(25 downto 21),
+            rd_addr1 => Instr_Reg_out(20 downto 16),
+            wr_addr => IR_Mux_out,
+            wr_en => regwrite,
+            wr_data => mem_data_mux_out,
+            rd_data1 => read_data1,
+            rd_data2 => read_data2,
+                    --=> JumpandLink
+                    );
+
+    Reg_A : entity work.reg
+        generic map(width => 32)
+        port map (
+            input => RF_out1,
+            output => Reg_A_out,
+            clk => clk,
+            rst => rst,
+            en => '1');
+    
+    Reg_B : entity work.reg
+        generic map(width => 32)
+        port map (
+            input => RF_out2,
+            output => Reg_B_out,
+            clk => clk,
+            rst => rst,
+            en => '1');
+
+    Reg_A_Mux : entity work.mux_2x1
+        generic map (width => 32)
+        port map (
+            in1 => PC_out,
+            in2 => Reg_A_out,
+            sel => ALUsrcA,
+            output => Reg_A_Mux_out);
+        
+    Reg_B_Mux : entity work.mux_4x1
+        generic map (width => 32)
+        port map (
+            in1 => Reg_B_out
+            in2 => std_logic_vector(to_unsigned(4, 32)),
+            in3 => Sign_ext_out,
+            in4 => Sign_ext_out(31 downto 2) & "00",
+            sel => ALUsrcB,
+            output => Reg_B_Mux_out);
+
+    ctrl_Mux : entity work.mux_3x1
+        generic map (width => 32)
+        port map (
+            in1 => "0000000000000000000000000000000" & branch_taken,
+            in2 => ALU_out_reg_out,
+            in3 => PC_out(31 downto 28) & Instr_Reg_out(25 downto 0) & "00",
+            sel => PCSource,
+            output => PC_in);
+
+    ALU_Control : entity work.ALU_Control
+        port map (
+            OPselect => OPselect,
+            instr => Instr_Reg_out(5 downto 0),
+            ALU_lo_HI => ALU_lo_HI,
+            ALU_OP => ALU_OP,
+            hi_en => hi_en,
+            low_en => low_en);
+
+    ALU_Out_reg : entity work.reg
+        generic map (width => 32)
+        port map (
+            input => alu_result,
+            output => ALU_out_reg_out,
+            clk => clk,
+            rst => rst,
+            en => '1');
+
+    ALU_LO_reg : entity work.reg
+        generic map (width => 32)
+        port map (
+            input => alu_result,
+            output => alu_low_reg_out,
+            clk => clk,
+            rst => rst,
+            en => low_en);
+
+    ALU_HI_reg : entity work.reg
+        generic map (width => 32)
+        port map (
+            input => alu_result_hi,
+            output => alu_hi_reg_out,
+            clk => clk,
+            rst => rst,
+            en => hi_en);
+
+    ALU_Out_mux : entity work.mux_3x1
+        generic map (width => 32)
+        port map (
+            in1 => ALU_out_reg_out,
+            in2 => alu_low_reg_out,
+            in3 => alu_hi_reg_out,
+            sel => ALU_lo_HI,
+            output => alu_out_mux_out);
+
+end architecture str;

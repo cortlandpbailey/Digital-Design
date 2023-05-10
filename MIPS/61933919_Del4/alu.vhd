@@ -1,0 +1,149 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity alu is
+	port (
+		input1 : in std_logic_vector(31 downto 0);
+		input2 : in std_logic_vector(31 downto 0);
+        shift_in : in unsigned(4 downto 0);
+		sel : in std_logic_vector(4 downto 0);
+		result : out std_logic_vector(31 downto 0);
+		result_hi : out std_logic_vector(31 downto 0);
+        branch_taken : out std_logic
+	);
+
+end alu;
+
+architecture BHV of alu is
+    constant ALU_ADD                : std_logic_vector(sel'range) := "00000"; --HEX 00
+    constant ALU_SUB                : std_logic_vector(sel'range) := "00001"; --HEX 01
+    constant ALU_MULT_SIGNED        : std_logic_vector(sel'range) := "00010"; --HEX 02
+    constant ALU_MULT_UNSIGNED      : std_logic_vector(sel'range) := "00011"; --HEX 03
+    constant ALU_AND                : std_logic_vector(sel'range) := "00100"; --HEX 04
+    constant ALU_OR                 : std_logic_vector(sel'range) := "00101"; --HEX 05
+    constant ALU_XOR                : std_logic_vector(sel'range) := "00110"; --HEX 06
+    constant ALU_LOGICAL_SHIFT_R    : std_logic_vector(sel'range) := "00111"; --HEX 07
+    constant ALU_LOGICAL_SHIFT_L    : std_logic_vector(sel'range) := "01000"; --HEX 08
+    constant ALU_ARITH_SHIFT_R      : std_logic_vector(sel'range) := "01001"; --HEX 09
+    constant ALU_LT                 : std_logic_vector(sel'range) := "01010"; --HEX 0A
+    constant ALU_LT_OR_E            : std_logic_vector(sel'range) := "01011"; --HEX 0B
+    constant ALU_GT                 : std_logic_vector(sel'range) := "01100"; --HEX 0C
+    constant ALU_GT_OR_E            : std_logic_vector(sel'range) := "01101"; --HEX 0D
+    constant ALU_EQ                 : std_logic_vector(sel'range) := "01110"; --HEX 0E
+    constant ALU_NOT_EQ             : std_logic_vector(sel'range) := "01111"; --HEX 0F
+    constant ALU_SET_LT_UNS         : std_logic_vector(sel'range) := "10000"; --HEX 10
+    constant ALU_SET_LT             : std_logic_vector(sel'range) := "10001"; --HEX 11
+
+begin
+    process(input1, input2, sel, shift_in)
+		variable temp : std_logic_vector(31 downto 0);
+        variable temp_mult : std_logic_vector(63 downto 0);
+        variable temp_first : std_logic;
+    
+
+	begin
+        result <= (others => '0');          --Default value for result is 0, this is changed on most selects
+		result_hi <= (others => '0');       -- Default value for result_hi is all 0's
+        branch_taken <= '0';                -- Default for branch taken (all boolean outs) is 0, false
+
+		case sel is
+            when ALU_ADD => --Addition
+                temp := std_logic_vector(unsigned(input1) + unsigned(input2));
+                result <= temp;                 -- S1 = S2 + S3
+
+            when ALU_SUB => --Subtraction
+                temp := std_logic_vector(unsigned(input1) - unsigned(input2));
+                result <= temp;                 -- S1 = S2-S3
+
+            when ALU_MULT_SIGNED => --Signed multiplication 
+                temp_mult := std_logic_vector(signed(input1) * signed(input2));
+                result <= temp_mult(31 downto 0);
+                result_hi <= temp_mult(63 downto 32);
+
+            when ALU_MULT_UNSIGNED => -- Unsigned multiplication
+                temp_mult := std_logic_vector(unsigned(input1) * unsigned(input2));
+                result <= temp_mult(31 downto 0);
+                result_hi <= temp_mult(63 downto 32);
+
+            when ALU_AND  => -- Bitwise AND
+                result <= input1 AND input2; 
+                
+            when ALU_OR => -- bitwise OR
+                result <= input1 OR input2;
+
+            when ALU_XOR => -- Bitwise XOR
+                result <= input1 XOR input2;
+
+            when ALU_LOGICAL_SHIFT_R => -- Logical Shift Right, up to 32 times (2^5)
+                temp := input1;    
+                --temp_shift := to_integer(unsigned(shift_in));
+                --for i in 0 to temp_shift loop
+                    temp := std_logic_vector(shift_right(unsigned(temp),to_integer(shift_in)));
+                --end loop;
+                result <= temp;
+            
+            when ALU_LOGICAL_SHIFT_L => 
+                temp := input1;   
+                    temp := std_logic_vector(shift_left(unsigned(temp),to_integer(shift_in)));
+                
+                result <= temp;
+
+            when ALU_ARITH_SHIFT_R => 
+                temp(30 downto 0) := input1(31 downto 1);
+                temp(31) := input1(31);
+                result <= temp;
+
+            when ALU_LT =>          -- IF input is less than 0, branch
+                if (signed(input1) < 0) then 
+                    result <= (others => '0');
+                    branch_taken <= '1';
+                end if;
+
+            when ALU_LT_OR_E  => 
+                if (signed(input1) <= 0) then 
+                    result <= (others => '0');
+                    branch_taken <= '1';
+                end if;
+
+            when ALU_GT => 
+                if (signed(input1) > 0) then 
+                    result <= (others => '0');
+                    branch_taken <= '1';
+                end if;
+            
+            when ALU_GT_OR_E => 
+                if (signed(input1) >= 0) then 
+                    result <= (others => '0');
+                    branch_taken <= '1';
+                end if;
+
+            when ALU_EQ => 
+                if (signed(input1) = signed(input2)) then 
+                    result <= (others => '0');
+                    branch_taken <= '1';
+                end if;
+
+            when ALU_NOT_EQ => 
+                if (signed(input1) /= signed(input2)) then 
+                    result <= (others => '0');
+                    branch_taken <= '1';
+                end if;
+
+            when ALU_SET_LT_UNS => --If input 1 is less than input2, set output result = 1 
+                if (unsigned(input1) < unsigned(input2)) then
+                    result <= std_logic_vector(to_unsigned(1,32));
+                end if;
+
+            when ALU_SET_LT =>      -- If input1 is less than input2 (SIGNED), set output result = 1
+                if (signed(input1) < signed(input2)) then
+                    result <= std_logic_vector(to_signed(1,32));
+                end if;
+
+            when others => null;
+        end case;
+
+    end process;
+    
+    
+end architecture BHV;

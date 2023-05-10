@@ -1,0 +1,442 @@
+# Compile of register.vhd was successful.
+# Compile of shift_left2.vhd was successful.
+# Compile of mux_2x1.vhd was successful.
+# Compile of mux_3x1.vhd was successful.
+# Compile of mux_4x1.vhd was successful.
+# Compile of sign_ext.vhd was successful.
+# Compile of delay.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of ALU_control.vhd was successful.
+# Compile of ram1.vhd was successful.
+# Compile of week2_demo.vhd was successful.
+# Compile of ram.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of mem_logic.vhd was successful.
+# Compile of memory.vhd was successful.
+# Compile of datapath.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of top_level_tb.vhd was successful.
+# Compile of TestCase1.vhd was successful.
+# Compile of TestCase7.vhd was successful.
+# Compile of TestCase2.vhd was successful.
+# Compile of TestCase4.vhd was successful.
+# Compile of GCD_Assembly.vhd was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.top_level_tb
+# vsim -gui work.top_level_tb 
+# Start time: 09:25:17 on Nov 29,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level_tb(tb)
+# Loading work.top_level(str)
+# Loading work.datapath(str)
+# Loading work.alu(bhv)
+# Loading work.reg(en_reg)
+# Loading work.mux_2x1(with_select)
+# Loading altera_mf.altera_mf_components
+# Loading work.memory(str)
+# Loading work.testcase1(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# Loading work.mem_logic(bhv)
+# Loading work.delay(str)
+# Loading work.mux_3x1(with_select)
+# Loading work.register_file(async_read)
+# Loading work.mux_4x1(with_select)
+# Loading work.alu_control(bhv)
+# Loading work.sign_ext(bhv)
+# Loading work.shift_left2(bhv)
+# Loading work.controller(fsm)
+# ** Warning: (vsim-3473) Component instance "U_LED5 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED4 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED3 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED2 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED1 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED0 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led0, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led0.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led1, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led1.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led2, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led2.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led3, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led3.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led4, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led4.
+# ** Warning: (vsim-8683) Uninitialized out port /top_level_tb/UUT/led4_dp has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led5, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led5.
+do C:/Users/baile/Documents/EEL4712/Project/wave.do
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: baile  Hostname: DESKTOP-L9QGIOP  ProcessID: 21464
+#           Attempting to use alternate WLF file "./wlft0714nf".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0714nf
+# ** UI-Msg: (vish-4014) No objects found matching '/top_level_tb/UUT/DP/U_Memory/LEDs'.
+# Executing ONERROR command at macro C:\Users\baile\Documents\EEL4712\Project\wave.do line 47
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/Register_File
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/Register_File
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 2  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 2  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 2  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# Compile of controller.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.controller(fsm)
+# ** Warning: (vsim-3473) Component instance "U_LED5 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED4 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED3 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED2 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED1 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED0 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led0, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led0.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led1, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led1.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led2, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led2.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led3, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led3.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led4, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led4.
+# ** Warning: (vsim-8683) Uninitialized out port /top_level_tb/UUT/led4_dp has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led5, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led5.
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/Register_File
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/Register_File
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 2  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 2  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 2  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# Compile of memory.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.memory(str)
+# Loading work.testcase7(syn)
+# ** Warning: (vsim-3473) Component instance "U_LED5 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED4 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED3 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED2 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED1 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED0 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led0, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led0.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led1, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led1.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led2, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led2.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led3, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led3.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led4, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led4.
+# ** Warning: (vsim-8683) Uninitialized out port /top_level_tb/UUT/led4_dp has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led5, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led5.
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/Register_File
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/Register_File
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 2  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 2  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 2  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+add wave -position 17  sim:/top_level_tb/UUT/DP/output
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3473) Component instance "U_LED5 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED4 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED3 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED2 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED1 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-3473) Component instance "U_LED0 : decoder7seg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT File: C:/Users/baile/Documents/EEL4712/Project/top_level.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led0, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led0.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led1, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led1.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led2, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led2.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led3, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led3.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led4, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led4.
+# ** Warning: (vsim-8683) Uninitialized out port /top_level_tb/UUT/led4_dp has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8684) No drivers exist on out port /top_level_tb/UUT/led5, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /top_level_tb/led5.
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/Register_File
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/Register_File
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 2  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 2  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 2  Instance: /top_level_tb/UUT/DP/U_Memory/U_LOGIC
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 1  Instance: /top_level_tb/UUT/DP/U_Memory/U_RAM/altsyncram_component
+# End time: 09:43:52 on Nov 29,2022, Elapsed time: 0:18:35
+# Errors: 0, Warnings: 43

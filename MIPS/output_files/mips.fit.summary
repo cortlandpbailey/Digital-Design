@@ -1,0 +1,18 @@
+Fitter Status : Successful - Mon Nov 28 21:26:09 2022
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Revision Name : mips
+Top-level Entity Name : top_level
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 3,394 / 49,760 ( 7 % )
+    Total combinational functions : 3,320 / 49,760 ( 7 % )
+    Dedicated logic registers : 1,292 / 49,760 ( 3 % )
+Total registers : 1292
+Total pins : 61 / 360 ( 17 % )
+Total virtual pins : 0
+Total memory bits : 8,192 / 1,677,312 ( < 1 % )
+Embedded Multiplier 9-bit elements : 16 / 288 ( 6 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )

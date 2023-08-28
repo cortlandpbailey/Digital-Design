@@ -19,3 +19,5 @@ begin
     in2           when others;
 end WITH_SELECT;
 
+-- remove with select to fix vivado issue
+
